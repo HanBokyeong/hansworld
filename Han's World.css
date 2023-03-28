@@ -1,0 +1,59 @@
+.right{
+    width:200px;
+    height:800px;
+    background-color: yellow;
+}
+
+
+.left{
+    width:200px;
+    height:800px;
+    background-color: blueviolet;
+}
+h1{
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    background-color: pink;
+}
+.main1{
+    flex:20%;
+    height: 700px;
+    background-color: pink;
+}
+
+.main2{
+    flex:45%;
+    background-color: pink;
+}
+.main2{
+    text-align: center;
+    
+}
+
+#p1{
+    margin-left: 10%;
+}
+#p2{
+    margin-left:5%;
+}
+
+.main3{
+    flex:35%;
+    background-color: pink;
+}
+img{
+    margin-top:30%;
+    margin-right: 30%;
+}
+.main3{
+    
+    text-decoration: none;
+}
+
+a #p3{
+    text-decoration: none;
+    margin-left: 25%;
+}

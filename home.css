@@ -1,0 +1,261 @@
+header{
+    background-color: pink;
+    height: 50px;
+}
+h3{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.tle{
+    display: flex;
+    background-color: pink;
+}
+
+.side{
+    flex:5%;
+    height: 800px;
+    background-color: pink;
+}
+
+.main{
+    
+    flex:90%;
+    height:798px;
+    background-color: gray;
+    border:1px dashed;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+.a{
+    height:40px;
+    background-color: gray;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    margin-left: 5%;
+    margin-top:10px;
+    font-family: 'Alkatra', cursive;
+font-family: 'Tillana', cursive;
+    
+}
+.b{
+    display: flex;
+    height:700px;
+    background-color: gray;
+}
+.c{
+    flex:5%;
+    height:700px;
+    background-color: gray;
+}
+.d{
+    flex:90%;
+    height:700px;
+    background-color: gray;
+
+}
+.g{display: flex;
+    height:95%;
+    background-color: aquamarine;
+}
+
+.main1{
+    flex:20%;
+    height:100%;
+    background-color: white;
+    border:2px dashed;
+    font-family: 'Alkatra', cursive;
+}
+
+.main1 img{
+    margin: 10px;
+    
+}
+.main2{
+   
+    flex:60%;
+    height:100%;
+    background-color: white;
+    border:2px dashed;
+}
+.mside{
+    display:flex;
+}
+
+.daily{
+    font-family: 'Alkatra',cursive;
+    margin-left: 5%;
+}
+
+.News{
+    width:150px;
+    height:20px;
+    border:2px solid;
+
+    display: flex;
+    margin-left: 5%;
+    margin-top:10px;
+    margin-bottom: 10px; 
+
+}
+
+.main3{
+    flex:7%;
+    height:100%;
+    background-color: gray;
+}
+.link{
+    width:55px;
+    height:25px;
+    border:2px solid;
+
+    display: flex;
+    margin-left: 0px;
+    margin-top:10px;
+    margin-bottom: 10px; 
+    
+}
+.link a{
+    text-decoration: none;
+    /*스크롤바 비활성화  */
+    overflow:hidden;
+    /* 영역 밖으로 텍스트 나갔을때
+     ...으로 표시 */
+    text-overflow:ellipsis;
+}
+.main4{
+    flex:20%;
+    height:100%;
+    background-color: gray;
+}
+.item{
+    
+    width:90%;
+    height:28%;
+    border:2px dashed;
+    background-color: white;
+    margin-left: 10px;
+}
+
+
+.item1{
+    
+    height:10px;
+    background-color: darkcyan;
+}
+.item2{
+    width:50px;
+    height:10px;
+    background-color: darkcyan;
+}
+.item3{
+    width:50px;
+    height:10px;
+    background-color: darkcyan;
+}
+
+
+.f{
+    flex:5%;
+    height:700px;
+    background-color: gray;
+}
+.h{
+    flex:5%;
+    height:800px;
+    background-color: pink;
+}
+footer{
+    background-color: pink;
+    height:50px;
+}
+
+audio{
+    width:170px;
+    height:30px;
+    margin-left: 5px;
+}
+.slider{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden; /* 현재 슬라이드 오른쪽에 위치한 나머지 슬라이드 들이 보이지 않도록 가림 */
+}
+.slider input[type=radio]{
+    display: none;
+}
+
+ul.imgs{
+    padding: 0;
+    margin: 0;
+    list-style: none;    
+}
+ul.imgs li{
+    position: absolute;
+    left: 640px;
+    transition-delay: 1s; /* 새 슬라이드가 이동해 오는 동안 이전 슬라이드 이미지가 배경이 보이도록 지연 */
+
+    padding: 0;
+    margin: 0;
+}
+
+.bullets{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* bottom: 20px; */
+    z-index: 2;
+}
+.bullets label{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.55);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+/* 현재 선택된 불릿 배경 흰색으로 구분 표시 */
+.slider input[type=radio]:nth-child(1):checked~.bullets>label:nth-child(1){
+    background-color: #fff;
+}
+.slider input[type=radio]:nth-child(2):checked~.bullets>label:nth-child(2){
+    background-color: #fff;
+}
+.slider input[type=radio]:nth-child(3):checked~.bullets>label:nth-child(3){
+    background-color: #fff;
+}
+.slider input[type=radio]:nth-child(4):checked~.bullets>label:nth-child(4){
+    background-color: #fff;
+}
+.slider input[type=radio]:nth-child(1):checked~ul.imgs>li:nth-child(1){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+.slider input[type=radio]:nth-child(2):checked~ul.imgs>li:nth-child(2){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+.slider input[type=radio]:nth-child(3):checked~ul.imgs>li:nth-child(3){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+.slider input[type=radio]:nth-child(4):checked~ul.imgs>li:nth-child(4){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+.search-popup{
+    margin-top: 120%;
+}
+.bot{
+    margin-top:90%;
+}
+.view{
+    margin-top:20px;
+    margin-left:50px;
+}
